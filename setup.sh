@@ -9,7 +9,7 @@ apt-get update
 apt-get upgrade
 apt-get install -y ruby2.2 ruby2.2-dev
 
-# Rails dependency
-apt-get install -y nodejs sqlite3 libsqlite3-dev build-essential zlib1g-dev
+# Dependency
+apt-get install -y nodejs build-essential zlib1g-dev
 
 gem install bundler

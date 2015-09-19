@@ -12,6 +12,6 @@ bundle clean
 
 echo 'Comparing...'
 
-diff vendor/bundle/rubygems.org/ruby/2.2.0/cache/ vendor/bundle/ruby.taobao.org/ruby/2.2.0/cache/
+diff -r vendor/bundle/rubygems.org/ruby/2.2.0/cache/ vendor/bundle/ruby.taobao.org/ruby/2.2.0/cache/
 
 echo 'Done.'
