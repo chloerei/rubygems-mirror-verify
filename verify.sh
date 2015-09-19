@@ -1,14 +1,14 @@
 #!/bin/bash
 
+rm -rf vendor
+
 bundle config --delete mirror.https://rubygems.org
 bundle config --delete path
 
 bundle install --path vendor/bundle/rubygems.org
-bundle clean
 
 bundle config --local mirror.https://rubygems.org https://ruby.taobao.org
 bundle install --path vendor/bundle/ruby.taobao.org
-bundle clean
 
 echo 'Comparing...'
 
